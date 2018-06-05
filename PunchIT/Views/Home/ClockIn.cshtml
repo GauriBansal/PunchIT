@@ -1,0 +1,22 @@
+﻿@model PunchIT.Models.TimeClock
+@{
+    ViewBag.Title = "ClockIn";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to PunchIT</h1>
+    <p class="lead">Clock your time here</p>
+    <form action="@Url.RouteUrl("TimeOutput")" , method="post">
+
+        @Html.AntiForgeryToken()
+
+        <div class="form-group row">
+            <p class="form-control-static col-sm-12">@TempData["PunchITMessage"]</p>
+            <span class="input-group-btn">
+                <button class="btn btn-primary btn-lg" type="submit">
+                    <i class="glyphicon glyphicon-link"></i> ClockIn-ClockOut
+                </button>
+            </span>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to PunchIT</h1>
+    <p class="lead">PunchIT is a Employee's Time-tracking solution for your business.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Getting started</h2>
+        <p>
+            PunchIT gives you a powerful, patterns-based way to track time for your Employee's
+            hardwork and gives you full control over your business's client billable Hours
+            and money.
+        </p>
+        <p><a class="btn btn-default" href="#">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-6">
+        <h2>Log Your Time Here</h2>
+        <p>If you are a current PunchIT customer, Log your hard-work here.</p>
+        <p><a href="@Url.RouteUrl("TimeInput")" class="btn btn-success btn-lg">Get Started &raquo;</a></p>
+    </div>
+</div>
